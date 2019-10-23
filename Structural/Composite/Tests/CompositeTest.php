@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DesignPatterns\Structural\Composite\Tests;
 
@@ -20,7 +20,7 @@ class CompositeTest extends TestCase
         // This is just an example, in a real world scenario it is important to remember that web browsers do not
         // currently support nested forms
 
-        $this->assertEquals(
+        $this->assertSame(
             '<form>Email:<input type="text" /><form>Password:<input type="text" /></form></form>',
             $form->render()
         );

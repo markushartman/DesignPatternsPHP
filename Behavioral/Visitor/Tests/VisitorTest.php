@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DesignPatterns\Tests\Visitor\Tests;
 
@@ -8,13 +8,13 @@ use PHPUnit\Framework\TestCase;
 class VisitorTest extends TestCase
 {
     /**
-     * @var Visitor\RoleVisitor
+     * @var Visitor\RecordingVisitor
      */
     private $visitor;
 
-    protected function setUp()
+    protected function setUp(): void
     {
-        $this->visitor = new Visitor\RoleVisitor();
+        $this->visitor = new Visitor\RecordingVisitor();
     }
 
     public function provideRoles()

@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DesignPatterns\More\EAV;
 
@@ -24,6 +24,6 @@ class Value
 
     public function __toString(): string
     {
-        return sprintf('%s: %s', $this->attribute, $this->name);
+        return sprintf('%s: %s', (string) $this->attribute, $this->name);
     }
 }

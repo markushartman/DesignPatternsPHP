@@ -34,15 +34,15 @@ Code
 
 You can also find this code on `GitHub`_
 
-ObjectCollection.php
+Context.php
 
-.. literalinclude:: ObjectCollection.php
+.. literalinclude:: Context.php
    :language: php
    :linenos:
 
-ComparatorInterface.php
+Comparator.php
 
-.. literalinclude:: ComparatorInterface.php
+.. literalinclude:: Comparator.php
    :language: php
    :linenos:
 

@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DesignPatterns\Creational\Singleton;
 
@@ -14,7 +14,7 @@ final class Singleton
      */
     public static function getInstance(): Singleton
     {
-        if (null === static::$instance) {
+        if (static::$instance === null) {
             static::$instance = new static();
         }
 

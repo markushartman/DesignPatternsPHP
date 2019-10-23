@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DesignPatterns\Behavioral\Command;
 
@@ -6,7 +6,7 @@ namespace DesignPatterns\Behavioral\Command;
  * This concrete command calls "print" on the Receiver, but an external
  * invoker just knows that it can call "execute"
  */
-class HelloCommand implements CommandInterface
+class HelloCommand implements Command
 {
     /**
      * @var Receiver

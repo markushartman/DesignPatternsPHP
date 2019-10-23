@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DesignPatterns\More\ServiceLocator\Tests;
 
@@ -13,7 +13,7 @@ class ServiceLocatorTest extends TestCase
      */
     private $serviceLocator;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->serviceLocator = new ServiceLocator();
     }

@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DesignPatterns\Creational\StaticFactory;
 
@@ -11,15 +11,13 @@ final class StaticFactory
     /**
      * @param string $type
      *
-     * @return FormatterInterface
+     * @return Formatter
      */
-    public static function factory(string $type): FormatterInterface
+    public static function factory(string $type): Formatter
     {
         if ($type == 'number') {
             return new FormatNumber();
-        }
-
-        if ($type == 'string') {
+        } elseif ($type == 'string') {
             return new FormatString();
         }
 
